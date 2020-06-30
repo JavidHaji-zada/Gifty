@@ -13,13 +13,13 @@ function Details(props) {
       {
         !props.text ? (
           <View style={{ flex: 1, justifyContent: 'center', backgroundColor: props.color }}>
-            <Text style={styles.txt}>Your text is 2:</Text>
+            <Text style={styles.txt}>Your text is:</Text>
             <SendButton onPress={() => { send() }} />
           </View>
         ) :
           (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: props.color }}>
-              <Text style={styles.txt}>{'Your text is 2: ' + props.text}</Text>
+              <Text style={styles.txt}>{'Your text is: ' + props.text}</Text>
             </View>
           )
       }
